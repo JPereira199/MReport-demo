@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #afccff;
+    padding: 1%;
+    box-sizing: border-box;
+    border-right: 2px solid #ccc; /* Add vertical line */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #000000; /* Add horizontal line */
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #000000; /* Add horizontal line */
+    margin-top: 20px;
+}
+
+.sub-section {
+    font-size: 16px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e8e8e8;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-left: 2px solid #000000; /* Add vertical line */
+
+}
