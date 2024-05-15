@@ -15,7 +15,7 @@
                 <div class="heading">Summary</div>
                 <div class="sub-section">ARNr 16S</div>
                 <ul>
-                    <li><a href="classify.html" class="load-content">Classify</a></li>
+                    <li><a href="Import/index.html" class="load-content">Classify</a></li>
                     <li><a href="taxonomic_table.html" class="load-content">Taxonomic Table</a></li>
                     <li><a href="taxonomic_barplot.html" class="load-content">Taxonomic Barplot</a></li>
                     <li><a href="diversity.html" class="load-content">Diversity</a></li>
