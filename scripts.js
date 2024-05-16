@@ -1,22 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.load-content');
-    const mainContent = document.querySelector('.main-content');
+    const links = document.querySelectorAll('.sidebar a');
+    const iframe = document.getElementById('content-frame');
 
     links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-
-            const url = this.getAttribute('href');
-
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    mainContent.innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Error loading content:', error);
-                    mainContent.innerHTML = '<p>Failed to load content. Please try again later.</p>';
-                });
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            const href = this.getAttribute('href'); // Get the href attribute of the clicked link
+            iframe.src = href; // Set the iframe src attribute to the href value
         });
     });
 });
